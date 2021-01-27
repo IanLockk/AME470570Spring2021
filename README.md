@@ -1,2 +1,3 @@
 # AME470570Spring2021
-work for AME 470
+Ian Lockwood
+1214416476
