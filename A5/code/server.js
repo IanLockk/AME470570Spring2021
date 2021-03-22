@@ -9,7 +9,7 @@ var hostname = process.env.HOSTNAME || 'localhost';
 var port = 1234;
 
 var MS = require("mongoskin");
-var db = MS.db("mongodb://34.219.163.158:27017/rssFeeds")
+var db = MS.db("mongodb://3.142.236.46:27017/A5")
 var rssList = [];
 
 app.get("/", function (req, res) {
@@ -32,6 +32,9 @@ app.get("/getFeeds", function (req, res) {
 app.get("/deleteFeed", function (req, res) {
   var index = parseInt(req.query.feedno);
   rssList.splice(index, 1);
+
+  //my code
+  db.collection("data").remove;
   res.send(JSON.stringify(rssList));
 });
 
