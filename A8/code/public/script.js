@@ -2,7 +2,7 @@ var allFeeds = [];
 var allItems = [];
 var currFeed = 0;
 var currItem = 0;
-var bucketURL = "https://bucket470570.s3-us-west-2.amazonaws.com";
+var bucketURL = "https://bucket470570ian.s3-us-east-2.amazonaws.com";
 
 function generateFeedMarkup()
 {
