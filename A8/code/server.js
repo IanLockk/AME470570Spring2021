@@ -123,7 +123,7 @@ app.post('/uploadImage', function(req, res){
     var buf = new Buffer(req.body.data.replace(/^data:image\/\w+;base64,/, ""),'base64');
     console.log(intname);
     var params = {
-        Bucket:'bucket470570',
+        Bucket:'bucket470570ian',
         ACL:'public-read',
         Key:intname,
         Body: buf,
